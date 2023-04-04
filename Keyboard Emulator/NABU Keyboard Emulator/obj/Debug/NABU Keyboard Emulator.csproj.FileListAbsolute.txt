@@ -1,0 +1,19 @@
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\NABU Keyboard Emulator.exe.config
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\NABU Keyboard Emulator.exe
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\NABU Keyboard Emulator.pdb
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\HidSharp.dll
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\SharpDX.dll
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\SharpDX.XInput.dll
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\HidSharp.pdb
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\HidSharp.xml
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\SharpDX.pdb
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\SharpDX.XInput.pdb
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\bin\Debug\SharpDX.XInput.xml
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.csproj.AssemblyReference.cache
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU_Keyboard_Emulator.Form1.resources
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU_Keyboard_Emulator.Properties.Resources.resources
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.csproj.GenerateResource.cache
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.csproj.CoreCompileInputs.cache
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.csproj.CopyComplete
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.exe
+E:\Documents\Personal\NABU\Keyboard Emulator\NABU Keyboard Emulator\obj\Debug\NABU Keyboard Emulator.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NABU Keyboard Emulator", "NABU Keyboard Emulator\NABU Keyboard Emulator.csproj", "{4A446384-8D1B-48FE-889A-8FCD43C5B7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A446384-8D1B-48FE-889A-8FCD43C5B7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A446384-8D1B-48FE-889A-8FCD43C5B7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A446384-8D1B-48FE-889A-8FCD43C5B7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A446384-8D1B-48FE-889A-8FCD43C5B7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66976ADF-1FB6-48C1-A298-99D91B6F4E4F}
+	EndGlobalSection
+EndGlobal
