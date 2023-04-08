@@ -147,6 +147,7 @@
       this.tbInput.TabIndex = 0;
       this.tbInput.Enter += new System.EventHandler(this.tbInput_Enter);
       this.tbInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbInput_KeyDown);
+      this.tbInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbInput_KeyPress);
       this.tbInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbInput_KeyUp);
       this.tbInput.Leave += new System.EventHandler(this.tbInput_Leave);
       // 
@@ -185,7 +186,9 @@
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.MaximizeBox = false;
       this.Name = "Form1";
-      this.Text = "DJ\'s NABU Keyboard Emulator";
+      this.Text = "DJ\'s NABU Keyboard Emulator (v0.2b)";
+      this.Activated += new System.EventHandler(this.Form1_Activated);
+      this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
       this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
       this.groupBox1.ResumeLayout(false);
       this.groupBox2.ResumeLayout(false);

@@ -186,7 +186,7 @@ namespace NABU_Keyboard_Emulator {
       if ((currentState.Gamepad.Buttons & GamepadButtonFlags.A) != 0)
         b |= 0b00010000;
 
-      _sp.Write(new byte[] { 0x80, b}, 0, 2);
+      _sp.Write(new byte[] { 0x80, b }, 0, 2);
     }
 
     private void _joy2_OnStop(object sender, string reason) {
@@ -224,8 +224,29 @@ namespace NABU_Keyboard_Emulator {
       if (!e.Shift && keyValue >= (int)Keys.A && keyValue <= (int)Keys.Z)
         return (char)(keyValue + 32);
 
+      log($"pressed: {keyValue}");
+
       return (char)keyValue;
     }
+
+    private void tbInput_KeyPress(object sender, KeyPressEventArgs e) {
+
+      try {
+
+        if (!_sp.IsOpen)
+          return;
+
+        _sp.Write(new byte[] { (byte)e.KeyChar }, 0, 1);
+
+        e.Handled = true;
+      } catch (Exception ex) {
+
+        log($"{ex.Message}");
+
+        close();
+      }
+    }
+
     private void tbInput_KeyDown(object sender, KeyEventArgs e) {
 
       try {
@@ -233,16 +254,9 @@ namespace NABU_Keyboard_Emulator {
         if (!_sp.IsOpen)
           return;
 
-        if (e.KeyValue == 16 || e.KeyValue == 17)
-          return;
-
         byte b;
-        
-        switch (e.KeyCode) {
 
-          case Keys.Enter:
-            b = 13;
-            break;
+        switch (e.KeyCode) {
 
           case Keys.Up:
             b = 0xe2;
@@ -265,8 +279,7 @@ namespace NABU_Keyboard_Emulator {
             break;
 
           default:
-            b = (byte)getChar(e);            
-            break;
+            return;
         }
 
         _sp.Write(new byte[] { b }, 0, 1);
@@ -288,7 +301,7 @@ namespace NABU_Keyboard_Emulator {
         if (!_sp.IsOpen)
           return;
 
-        byte b = 0;
+        byte b;
 
         switch (e.KeyCode) {
 
@@ -311,10 +324,12 @@ namespace NABU_Keyboard_Emulator {
           case Keys.PageDown:
             b = 0xf5;
             break;
+
+          default:
+            return;
         }
 
-        if (b != 0)
-          _sp.Write(new byte[] { b }, 0, 1);
+        _sp.Write(new byte[] { b }, 0, 1);
 
         e.SuppressKeyPress = true;
         e.Handled = true;
@@ -334,6 +349,17 @@ namespace NABU_Keyboard_Emulator {
     private void tbInput_Leave(object sender, EventArgs e) {
 
       tbInput.BackColor = Color.Black;
+    }
+
+    private void Form1_Deactivate(object sender, EventArgs e) {
+
+      tbInput.BackColor = Color.Black;
+    }
+
+    private void Form1_Activated(object sender, EventArgs e) {
+
+      if (tbInput.Focused)
+        tbInput.BackColor = Color.Green;
     }
   }
 }
